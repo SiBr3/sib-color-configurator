@@ -23,7 +23,8 @@ const SiBr3Configurator = (function() {
             currentSqlPath: '',
             currentDirPath: '',
             currentPastebinText: '',
-            currentPastebinType: '' // 'sql' or 'config'
+            currentPastebinType: '', // 'sql' or 'config'
+            dirHandle: null          // FileSystemDirectoryHandle, session-only (not persisted)
         }
     };
 	
@@ -301,19 +302,33 @@ const SiBr3Configurator = (function() {
 			
 			document.getElementById('btnLoadingModalCancel').textContent = t('btnCancel');
 			
-            // Directory status
+            // Directory status — three states based on API support and whether a handle has been picked
             const dir = State.paths.currentDirPath || null;
             const stat = document.getElementById('directoryStatus');
+            const hasPickerAPI = typeof window.showDirectoryPicker === 'function';
+
             if (dir) {
-                const pathHtml = `<code class="copy-dir-path"; lang="en">${Utils.escapeHtml(dir)}</code>` +
-                                 `<button class="btn btn-neutral copy-path-btn" style="vertical-align:middle" data-path="${Utils.escapeHtml(dir)}" title="${Utils.escapeHtml(t('tipCopyPath'))}">
-									<img src="assets/icons/sib-cc-copy.png" style="width: 20px; height: 20px;">
-								 </button>` +
-                                 `<span class="copy-status" style="opacity:0;font-size:12px;margin-left:4px;transition:opacity 0.2s;font-weight:bold"><img src="assets/icons/sib-cc-tick.png" style="width: 22px; height: 22px; vertical-align: middle;"></span>`;
-                stat.innerHTML = `<img src="assets/icons/sib-cc-folder.png" style="width: 16px; height: 16px; margin-right: 6px; vertical-align: middle">` + t('dirDetected') + pathHtml;
+                // Handle picked — show folder name and a change button
+                stat.innerHTML =
+                    `<img src="assets/icons/sib-cc-folder.png" style="width:16px;height:16px;margin-right:6px;vertical-align:middle">` +
+                    `<span>${Utils.escapeHtml(t('dirSelected'))} </span>` +
+                    `<code class="copy-dir-path" lang="en">${Utils.escapeHtml(dir)}</code>` +
+                    `<button class="btn btn-neutral" data-action="pickModDir" style="margin-left:6px;vertical-align:middle" title="${Utils.escapeHtml(t('tipChangeDir'))}">` +
+                    `<img src="assets/icons/sib-cc-folder-open.png" style="width:16px;height:16px;vertical-align:middle"></button>`;
+                stat.classList.remove('warn');
+            } else if (hasPickerAPI) {
+                // API available but no folder chosen yet — invite the user to pick
+                stat.innerHTML =
+                    `<button class="btn btn-neutral" data-action="pickModDir" style="margin-right:8px;vertical-align:middle">` +
+                    `<img src="assets/icons/sib-cc-folder-open.png" style="width:16px;height:16px;vertical-align:middle;margin-right:4px">` +
+                    `${Utils.escapeHtml(t('btnPickDir'))}</button>` +
+                    `<span style="color:var(--text-muted);font-size:0.9em">${Utils.escapeHtml(t('dirWebMode'))}</span>`;
                 stat.classList.remove('warn');
             } else {
-                stat.innerHTML = `<img src="assets/icons/sib-cc-folder.png" style="width: 16px; height: 16px; margin-right: 6px; vertical-align: middle">` + t('dirWebMode');
+                // No API support (e.g. Firefox) — neutral informational note
+                stat.innerHTML =
+                    `<img src="assets/icons/sib-cc-folder.png" style="width:16px;height:16px;margin-right:6px;vertical-align:middle">` +
+                    `<span style="color:var(--text-muted);font-size:0.9em">${Utils.escapeHtml(t('dirWebMode'))}</span>`;
                 stat.classList.remove('warn');
             }
             
@@ -413,18 +428,33 @@ const SiBr3Configurator = (function() {
             
             document.getElementById('genericCodeBody').innerHTML = codeHtml;
             
-            // Hardcoded to append \sql to the path
-            const dir = State.paths.currentDirPath || null;
-            const targetPath = dir ? (dir + '\\sql') : '';
-            
-            if (targetPath) {
-                document.getElementById('genericPastebinFooter').innerHTML = 
+            // Footer: direct-save button if a folder handle exists, otherwise plain text
+            const footerEl = document.getElementById('genericPastebinFooter');
+            if (State.paths.dirHandle) {
+                footerEl.innerHTML =
                     Utils.escapeHtml(footerText) +
-                    `<br><br><code class="copy-dir-path" lang="en">${Utils.escapeHtml(targetPath)}</code>` +
-                    `<button class="btn btn-neutral copy-path-btn" style="vertical-align: middle" data-path="${Utils.escapeHtml(targetPath)}" title="${Utils.escapeHtml(t('tipCopyPath'))}"><img src="assets/icons/sib-cc-copy.png" style="width: 16px; height: 16px;"></button>` +
-                    `<span class="copy-status" style="opacity:0;color:#10b981;font-size:14px;margin-left:4px;transition:opacity 0.2s;font-weight:bold"><img src="assets/icons/sib-cc-tick.png" style="width: 22px; height: 22px; vertical-align: middle;"></span>`;
+                    `<br><br><button class="btn btn-accent" id="btnSaveToMod" style="margin-top:6px">` +
+                    `<img src="assets/icons/sib-cc-exportcolor.png" style="width:16px;height:16px;vertical-align:middle;margin-right:6px">` +
+                    `${Utils.escapeHtml(t('btnSaveToMod', { folder: State.paths.currentDirPath }))}</button>` +
+                    `<span id="saveToModStatus" style="opacity:0;margin-left:8px;vertical-align:middle;transition:opacity 0.3s">` +
+                    `<img src="assets/icons/sib-cc-tick.png" style="width:20px;height:20px;vertical-align:middle"></span>`;
+
+                document.getElementById('btnSaveToMod').onclick = async () => {
+                    try {
+                        const sqlDir = await State.paths.dirHandle.getDirectoryHandle('sql', { create: true });
+                        const fileHandle = await sqlDir.getFileHandle(downloadName, { create: true });
+                        const writable = await fileHandle.createWritable();
+                        await writable.write(content);
+                        await writable.close();
+                        const st = document.getElementById('saveToModStatus');
+                        if (st) { st.style.opacity = '1'; setTimeout(() => st.style.opacity = '0', 2500); }
+                        UI.notify(t('notifSavedToMod', { filename: downloadName }), 'success');
+                    } catch (err) {
+                        UI.notify(t('notifSaveError', { error: err.message }), 'error');
+                    }
+                };
             } else {
-                document.getElementById('genericPastebinFooter').textContent = footerText;
+                footerEl.textContent = footerText;
             }
             
             // Hardcoded to text/plain for SQL and specific SQL tooltip
@@ -1257,6 +1287,19 @@ const SiBr3Configurator = (function() {
                 const ds = actionEl.dataset;
 
                 switch(action) {
+                    case 'pickModDir':
+                        (async () => {
+                            try {
+                                const handle = await window.showDirectoryPicker({ mode: 'readwrite' });
+                                State.paths.dirHandle = handle;
+                                State.paths.currentDirPath = handle.name;
+                                UI.applyStrings();
+                                UI.notify(t('notifDirSelected', { name: handle.name }), 'success');
+                            } catch (err) {
+                                if (err.name !== 'AbortError') UI.notify(t('notifDirError'), 'error');
+                            }
+                        })();
+                        break;
                     case 'exportSql':
                         UI.showPastebin(t('sqlPastebinTitle'), IO.generateCombinedSQL(), t('sqlPastebinFooter'), 'colors.sql');
                         break;
