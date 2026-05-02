@@ -88,17 +88,9 @@ window.Locale = {
 				tipDelete:                  "Delete",
 
 				// --- 9. File & Directory Management ---
-				dirDetected:                "Mod directory:",
-				dirNotFound:                "Open this file directly from your mod folder so the path can be auto-detected.",
-				tipCopyPath:                "Copy path to clipboard",
-				dirSelected:                "Mod folder:",
-				dirWebMode:                 "Select your mod folder to save SQL files directly.",
-				btnPickDir:                 "Pick mod folder",
-				tipChangeDir:               "Change mod folder",
-				btnSaveToMod:               "Save to {folder}/sql/",
 				
 				sqlPastebinTitle:           "SQL Output",
-				sqlPastebinFooter:          "Replace the contents of colors.sql in the \"sql\" folder in the Workshop mod directory with the above code. Alternatively, download the file below (must be called colors.sql) and place it in the same location.",
+				sqlPastebinFooter:          "Replace the contents of colors.sql in the \"sql\" folder in the Workshop mod directory with the above code. Alternatively, download the file above (must be called colors.sql) and place it in the same location.",
 				tipDownloadSql:             "Download colors.sql",
 				
 				sqlCopyBtn:                 "Copy to Clipboard",
@@ -121,10 +113,6 @@ window.Locale = {
 				notifConfigLoaded:          "Configuration loaded from {filename}.",
 				notifConfigError:           "Error loading configuration: {error}",
 				notifNoDir:                 "Could not detect mod directory. Open this file from a local file:// path.",
-				notifDirSelected:           "Mod folder set to \"{name}\". Session only.",
-				notifDirError:              "Could not access that folder.",
-				notifSavedToMod:            "Saved {filename} to sql/ subfolder.",
-				notifSaveError:             "Write failed: {error}",
 				notifAutoApplied:           "{method} colors applied to {leader}",
 				notifBulkApplied:           "{method} applied to {count} leaders",
 				notifMinColors:             "Please select at least {min} colors",
@@ -345,17 +333,9 @@ window.Locale = {
 				tipDelete:                  "Supprimer",
 
 				// --- 9. File & Directory Management ---
-				dirDetected:                "Répertoire du mod :",
-				dirNotFound:                "Ouvrez ce fichier directement depuis votre dossier mod pour que le chemin soit détecté automatiquement.",
-				tipCopyPath:                "Copier le chemin dans le presse-papiers",
-				dirSelected:                "Dossier mod :",
-				dirWebMode:                 "Sélectionnez votre dossier mod pour enregistrer les fichiers SQL directement.",
-				btnPickDir:                 "Choisir le dossier mod",
-				tipChangeDir:               "Changer le dossier mod",
-				btnSaveToMod:               "Enregistrer dans {folder}/sql/",
 				
 				sqlPastebinTitle:           "Sortie SQL",
-				sqlPastebinFooter:          "Remplacez le contenu de colors.sql dans le dossier \"sql\" du répertoire du mod du Workshop par le code ci-dessus. Alternativement, téléchargez le fichier ci-dessous (qui doit s'appeler colors.sql) et placez-le au même endroit.",
+				sqlPastebinFooter:          "Remplacez le contenu de colors.sql dans le dossier \"sql\" du répertoire du mod du Workshop par le code ci-dessus. Alternativement, téléchargez le fichier ci-dessus (qui doit s'appeler colors.sql) et placez-le au même endroit.",
 				tipDownloadSql:             "Télécharger colors.sql",
 				
 				sqlCopyBtn:                 "Copier dans le presse-papiers",
@@ -378,10 +358,6 @@ window.Locale = {
 				notifConfigLoaded:          "Configuration chargée depuis {filename}.",
 				notifConfigError:           "Erreur lors du chargement de la configuration : {error}",
 				notifNoDir:                 "Impossible de détecter le répertoire du mod. Ouvrez ce fichier depuis un chemin local file://.",
-				notifDirSelected:           "Dossier mod défini sur « {name} ». Session uniquement.",
-				notifDirError:              "Impossible d'accéder à ce dossier.",
-				notifSavedToMod:            "{filename} enregistré dans le sous-dossier sql/.",
-				notifSaveError:             "Échec de l'écriture : {error}",
 				notifAutoApplied:           "Couleurs {method} appliquées à {leader}",
 				notifBulkApplied:           "{method} appliqué à {count} dirigeants",
 				notifMinColors:             "Veuillez sélectionner au moins {min} couleurs",
@@ -624,17 +600,9 @@ window.Locale = {
 				tipDelete:                  "Löschen",
 
 				// --- 9. File & Directory Management ---
-				dirDetected:                "Mod-Verzeichnis:",
-				dirNotFound:                "Öffnen Sie diese Datei direkt aus Ihrem Mod-Ordner, damit der Pfad automatisch erkannt werden kann.",
-				tipCopyPath:                "Pfad in die Zwischenablage kopieren",
-				dirSelected:                "Mod-Ordner:",
-				dirWebMode:                 "Wählen Sie Ihren Mod-Ordner aus, um SQL-Dateien direkt zu speichern.",
-				btnPickDir:                 "Mod-Ordner auswählen",
-				tipChangeDir:               "Mod-Ordner ändern",
-				btnSaveToMod:               "In {folder}/sql/ speichern",
 				
 				sqlPastebinTitle:           "SQL-Ausgabe",
-				sqlPastebinFooter:          "Ersetzen Sie den Inhalt von colors.sql im Ordner \"sql\" im Workshop-Mod-Verzeichnis durch den obigen Code. Alternativ laden Sie die Datei unten herunter (muss colors.sql heißen) und legen Sie sie am selben Ort ab.",
+				sqlPastebinFooter:          "Ersetzen Sie den Inhalt von colors.sql im Ordner \"sql\" im Workshop-Mod-Verzeichnis durch den obigen Code. Alternativ laden Sie die Datei oben herunter (muss colors.sql heißen) und legen Sie sie am selben Ort ab.",
 				tipDownloadSql:             "colors.sql herunterladen",
 				
 				sqlCopyBtn:                 "In Zwischenablage kopieren",
@@ -657,10 +625,6 @@ window.Locale = {
 				notifConfigLoaded:          "Konfiguration aus {filename} geladen.",
 				notifConfigError:           "Fehler beim Laden der Konfiguration: {error}",
 				notifNoDir:                 "Mod-Verzeichnis konnte nicht erkannt werden. Öffnen Sie diese Datei von einem lokalen file://-Pfad.",
-				notifDirSelected:           "Mod-Ordner auf \"{name}\" gesetzt. Nur für diese Sitzung.",
-				notifDirError:              "Auf diesen Ordner konnte nicht zugegriffen werden.",
-				notifSavedToMod:            "{filename} in den Unterordner sql/ gespeichert.",
-				notifSaveError:             "Schreiben fehlgeschlagen: {error}",
 				notifAutoApplied:           "{method}-Farben auf {leader} angewendet",
 				notifBulkApplied:           "{method} auf {count} Anführer angewendet",
 				notifMinColors:             "Bitte mindestens {min} Farben auswählen",
@@ -902,17 +866,9 @@ window.Locale = {
 				tipDelete:                  "Elimina",
 
 				// --- 9. File & Directory Management ---
-				dirDetected:                "Directory mod:",
-				dirNotFound:                "Apri questo file direttamente dalla cartella mod per rilevare automaticamente il percorso.",
-				tipCopyPath:                "Copia il percorso negli appunti",
-				dirSelected:                "Cartella mod:",
-				dirWebMode:                 "Seleziona la cartella mod per salvare i file SQL direttamente.",
-				btnPickDir:                 "Scegli cartella mod",
-				tipChangeDir:               "Cambia cartella mod",
-				btnSaveToMod:               "Salva in {folder}/sql/",
 				
 				sqlPastebinTitle:           "Output SQL",
-				sqlPastebinFooter:          "Sostituisci il contenuto di colors.sql nella cartella \"sql\" della directory del mod del Workshop con il codice sopra. In alternativa, scarica il file qui sotto (deve chiamarsi colors.sql) e inseriscilo nella stessa posizione.",
+				sqlPastebinFooter:          "Sostituisci il contenuto di colors.sql nella cartella \"sql\" della directory del mod del Workshop con il codice sopra. In alternativa, scarica il file qui sopra (deve chiamarsi colors.sql) e inseriscilo nella stessa posizione.",
 				tipDownloadSql:             "Scarica colors.sql",
 				
 				sqlCopyBtn:                 "Copia negli appunti",
@@ -935,10 +891,6 @@ window.Locale = {
 				notifConfigLoaded:          "Configurazione caricata da {filename}.",
 				notifConfigError:           "Errore durante il caricamento della configurazione: {error}",
 				notifNoDir:                 "Impossibile rilevare la directory mod. Apri questo file da un percorso locale file://.",
-				notifDirSelected:           "Cartella mod impostata su \"{name}\". Solo per questa sessione.",
-				notifDirError:              "Impossibile accedere a quella cartella.",
-				notifSavedToMod:            "{filename} salvato nella sottocartella sql/.",
-				notifSaveError:             "Scrittura non riuscita: {error}",
 				notifAutoApplied:           "Colori {method} applicati a {leader}",
 				notifBulkApplied:           "{method} applicato a {count} leader",
 				notifMinColors:             "Seleziona almeno {min} colori",
@@ -1176,17 +1128,9 @@ window.Locale = {
 				tipDelete:                  "Eliminar",
 
 				// --- 9. File & Directory Management ---
-				dirDetected:                "Directorio del mod:",
-				dirNotFound:                "Abre este archivo directamente desde la carpeta del mod para detectar la ruta automáticamente.",
-				tipCopyPath:                "Copiar ruta al portapapeles",
-				dirSelected:                "Carpeta del mod:",
-				dirWebMode:                 "Selecciona la carpeta del mod para guardar los archivos SQL directamente.",
-				btnPickDir:                 "Elegir carpeta del mod",
-				tipChangeDir:               "Cambiar carpeta del mod",
-				btnSaveToMod:               "Guardar en {folder}/sql/",
 				
 				sqlPastebinTitle:           "Salida SQL",
-				sqlPastebinFooter:          "Reemplaza el contenido de colors.sql en la carpeta \"sql\" del directorio del mod del Workshop con el código anterior. Alternativamente, descarga el archivo a continuación (debe llamarse colors.sql) y colócalo en la misma ubicación.",
+				sqlPastebinFooter:          "Reemplaza el contenido de colors.sql en la carpeta \"sql\" del directorio del mod del Workshop con el código anterior. Alternativamente, descarga el archivo de arriba (debe llamarse colors.sql) y colócalo en la misma ubicación.",
 				tipDownloadSql:             "Descargar colors.sql",
 				
 				sqlCopyBtn:                 "Copiar al portapapeles",
@@ -1209,10 +1153,6 @@ window.Locale = {
 				notifConfigLoaded:          "Configuración cargada desde {filename}.",
 				notifConfigError:           "Error al cargar la configuración: {error}",
 				notifNoDir:                 "No se pudo detectar el directorio del mod. Abre este archivo desde una ruta local file://.",
-				notifDirSelected:           "Carpeta del mod configurada como \"{name}\". Solo para esta sesión.",
-				notifDirError:              "No se pudo acceder a esa carpeta.",
-				notifSavedToMod:            "{filename} guardado en la subcarpeta sql/.",
-				notifSaveError:             "Error al escribir: {error}",
 				notifAutoApplied:           "Colores {method} aplicados a {leader}",
 				notifBulkApplied:           "{method} aplicado a {count} líderes",
 				notifMinColors:             "Selecciona al menos {min} colores",
@@ -1452,17 +1392,9 @@ window.Locale = {
 				tipDelete:                  "削除",
 
 				// --- 9. File & Directory Management ---
-				dirDetected:                "モッドディレクトリ:",
-				dirNotFound:                "モッドフォルダから直接ファイルを開いてパスを自動検出してください。",
-				tipCopyPath:                "パスをクリップボードにコピー",
-				dirSelected:                "Modフォルダ:",
-				dirWebMode:                 "SQLファイルを直接保存するにはModフォルダを選択してください。",
-				btnPickDir:                 "Modフォルダを選択",
-				tipChangeDir:               "Modフォルダを変更",
-				btnSaveToMod:               "{folder}/sql/ に保存",
 				
 				sqlPastebinTitle:           "SQL出力",
-				sqlPastebinFooter:          "Workshop modディレクトリの\"sql\"フォルダにcolors.sqlの内容を上記コードに置き換えてください。または、以下のファイル（colors.sqlという名前にする必要があります）をダウンロードして同じ場所に配置してください。",
+				sqlPastebinFooter:          "Workshop modディレクトリの\"sql\"フォルダにあるcolors.sqlの内容を上記コードに置き換えてください。または、上記のファイル（colors.sqlという名前にする必要があります）をダウンロードして同じ場所に配置してください。",
 				tipDownloadSql:             "colors.sqlをダウンロード",
 				
 				sqlCopyBtn:                 "クリップボードにコピー",
@@ -1485,10 +1417,6 @@ window.Locale = {
 				notifConfigLoaded:          "{filename}から設定をインポートしました。",
 				notifConfigError:           "設定の読み込みエラー: {error}",
 				notifNoDir:                 "モッドディレクトリを検出できませんでした。ローカルの file:// パスからファイルを開いてください。",
-				notifDirSelected:           "Modフォルダを「{name}」に設定しました。このセッション限りです。",
-				notifDirError:              "フォルダにアクセスできませんでした。",
-				notifSavedToMod:            "{filename} を sql/ フォルダに保存しました。",
-				notifSaveError:             "書き込みに失敗しました: {error}",
 				notifAutoApplied:           "{method} カラーを {leader} に適用しました",
 				notifBulkApplied:           "{method} を {count} 指導者に適用しました",
 				notifMinColors:             "{min} 色以上を選択してください",
@@ -1743,17 +1671,9 @@ window.Locale = {
 				tipDelete:                  "삭제",
 
 				// --- 9. File & Directory Management ---
-				dirDetected:                "모드 디렉터리:",
-				dirNotFound:                "경로를 자동 감지하려면 모드 폴더에서 직접 파일을 여세요.",
-				tipCopyPath:                "경로를 클립보드에 복사",
-				dirSelected:                "모드 폴더:",
-				dirWebMode:                 "SQL 파일을 직접 저장하려면 모드 폴더를 선택하세요.",
-				btnPickDir:                 "모드 폴더 선택",
-				tipChangeDir:               "모드 폴더 변경",
-				btnSaveToMod:               "{folder}/sql/에 저장",
 				
 				sqlPastebinTitle:           "SQL 출력",
-				sqlPastebinFooter:          "Workshop mod 디렉터리의 \"sql\" 폴더에 있는 colors.sql의 내용을 위의 코드로 교체하세요. 또는 아래 파일을 다운로드하여(반드시 colors.sql로 명명) 같은 위치에 놓으세요.",
+				sqlPastebinFooter:          "Workshop mod 디렉터리의 \"sql\" 폴더에 있는 colors.sql의 내용을 위의 코드로 교체하세요. 또는 위의 파일을 다운로드하여(반드시 colors.sql로 명명) 같은 위치에 놓으세요.",
 				tipDownloadSql:             "colors.sql 다운로드",
 				
 				sqlCopyBtn:                 "클립보드에 복사",
@@ -1776,10 +1696,6 @@ window.Locale = {
 				notifConfigLoaded:          "{filename}에서 설정을 불러왔습니다.",
 				notifConfigError:           "설정 로드 오류: {error}",
 				notifNoDir:                 "모드 디렉터리를 감지할 수 없습니다. 로컬 file:// 경로에서 파일을 열어주세요.",
-				notifDirSelected:           "모드 폴더가 \"{name}\"으로 설정되었습니다. 이 세션에서만 유효합니다.",
-				notifDirError:              "해당 폴더에 접근할 수 없습니다.",
-				notifSavedToMod:            "{filename}이(가) sql/ 하위 폴더에 저장되었습니다.",
-				notifSaveError:             "쓰기 실패: {error}",
 				notifAutoApplied:           "{method} 컬러가 {leader}에 적용되었습니다",
 				notifBulkApplied:           "{method}이(가) {count}명의 지도자에 적용되었습니다",
 				notifMinColors:             "최소 {min}개의 컬러를 선택해 주세요",
@@ -2034,17 +1950,9 @@ window.Locale = {
 				tipDelete:                  "Usuń",
 
 				// --- 9. File & Directory Management ---
-				dirDetected:                "Katalog moda:",
-				dirNotFound:                "Otwórz ten plik bezpośrednio z folderu moda, aby automatycznie wykryć ścieżkę.",
-				tipCopyPath:                "Skopiuj ścieżkę do schowka",
-				dirSelected:                "Folder moda:",
-				dirWebMode:                 "Wybierz folder moda, aby bezpośrednio zapisywać pliki SQL.",
-				btnPickDir:                 "Wybierz folder moda",
-				tipChangeDir:               "Zmień folder moda",
-				btnSaveToMod:               "Zapisz do {folder}/sql/",
 				
 				sqlPastebinTitle:           "Wyjście SQL",
-				sqlPastebinFooter:          "Zastąp zawartość pliku colors.sql w folderze \"sql\" katalogu moda w Warsztacie powyższym kodem. Ewentualnie pobierz plik poniżej (musi nazywać się colors.sql) i umieść go w tym samym miejscu.",
+				sqlPastebinFooter:          "Zastąp zawartość pliku colors.sql w folderze \"sql\" katalogu moda w Warsztacie powyższym kodem. Ewentualnie pobierz plik powyżej (musi nazywać się colors.sql) i umieść go w tym samym miejscu.",
 				tipDownloadSql:             "Pobierz colors.sql",
 				
 				sqlCopyBtn:                 "Kopiuj do schowka",
@@ -2067,10 +1975,6 @@ window.Locale = {
 				notifConfigLoaded:          "Konfiguracja załadowana z {filename}.",
 				notifConfigError:            "Błąd ładowania konfiguracji: {error}",
 				notifNoDir:                 "Nie można wykryć katalogu moda. Otwórz plik ze ścieżki lokalnej file://.",
-				notifDirSelected:           "Folder moda ustawiony na \"{name}\". Tylko na czas sesji.",
-				notifDirError:              "Nie można uzyskać dostępu do tego folderu.",
-				notifSavedToMod:            "{filename} zapisany w podfolderze sql/.",
-				notifSaveError:             "Zapis nie powiódł się: {error}",
 				notifAutoApplied:           "Kolory {method} zastosowane do {leader}",
 				notifBulkApplied:           "{method} zastosowano do {count} przywódców",
 				notifMinColors:             "Wybierz co najmniej {min} kolorów",
@@ -2312,17 +2216,9 @@ window.Locale = {
 				tipDelete:                  "Excluir",
 
 				// --- 9. File & Directory Management ---
-				dirDetected:                "Diretório do mod:",
-				dirNotFound:                "Abra este arquivo diretamente da pasta do mod para detectar o caminho automaticamente.",
-				tipCopyPath:                "Copiar caminho para a área de transferência",
-				dirSelected:                "Pasta do mod:",
-				dirWebMode:                 "Selecione a pasta do mod para salvar arquivos SQL diretamente.",
-				btnPickDir:                 "Escolher pasta do mod",
-				tipChangeDir:               "Alterar pasta do mod",
-				btnSaveToMod:               "Salvar em {folder}/sql/",
 				
 				sqlPastebinTitle:           "Saída SQL",
-				sqlPastebinFooter:          "Substitua o conteúdo de colors.sql na pasta \"sql\" do diretório do mod do Workshop pelo código acima. Como alternativa, baixe o arquivo abaixo (deve se chamar colors.sql) e coloque-o no mesmo local.",
+				sqlPastebinFooter:          "Substitua o conteúdo de colors.sql na pasta \"sql\" do diretório do mod do Workshop pelo código acima. Como alternativa, baixe o arquivo acima (deve se chamar colors.sql) e coloque-o no mesmo local.",
 				tipDownloadSql:             "Baixar colors.sql",
 				
 				sqlCopyBtn:                 "Copiar para a área de transferência",
@@ -2345,10 +2241,6 @@ window.Locale = {
 				notifConfigLoaded:          "Configuração carregada de {filename}.",
 				notifConfigError:           "Erro ao carregar configuração: {error}",
 				notifNoDir:                 "Não foi possível detectar o diretório do mod. Abra este arquivo de um caminho local file://.",
-				notifDirSelected:           "Pasta do mod definida como \"{name}\". Apenas para esta sessão.",
-				notifDirError:              "Não foi possível acessar essa pasta.",
-				notifSavedToMod:            "{filename} salvo na subpasta sql/.",
-				notifSaveError:             "Falha ao gravar: {error}",
 				notifAutoApplied:           "Cores {method} aplicadas a {leader}",
 				notifBulkApplied:           "{method} aplicado a {count} líderes",
 				notifMinColors:             "Selecione pelo menos {min} cores",
@@ -2588,17 +2480,9 @@ window.Locale = {
 				tipDelete:                  "Удалить",
 
 				// --- 9. File & Directory Management ---
-				dirDetected:                "Каталог мода:",
-				dirNotFound:                "Откройте файл непосредственно из папки мода для автоопределения пути.",
-				tipCopyPath:                "Скопировать путь в буфер обмена",
-				dirSelected:                "Папка мода:",
-				dirWebMode:                 "Выберите папку мода для сохранения SQL-файлов напрямую.",
-				btnPickDir:                 "Выбрать папку мода",
-				tipChangeDir:               "Изменить папку мода",
-				btnSaveToMod:               "Сохранить в {folder}/sql/",
 				
 				sqlPastebinTitle:           "Вывод SQL",
-				sqlPastebinFooter:          "Замените содержимое файла colors.sql в папке \"sql\" каталога мода в Мастерской приведённым выше кодом. Также можно скачать файл ниже (должен называться colors.sql) и поместить его в то же место.",
+				sqlPastebinFooter:          "Замените содержимое файла colors.sql в папке \"sql\" каталога мода в Мастерской приведённым выше кодом. Также можно скачать файл выше (должен называться colors.sql) и поместить его в то же место.",
 				tipDownloadSql:             "Скачать colors.sql",
 				
 				sqlCopyBtn:                 "Копировать в буфер обмена",
@@ -2621,10 +2505,6 @@ window.Locale = {
 				notifConfigLoaded:          "Конфигурация загружена из {filename}.",
 				notifConfigError:           "Ошибка загрузки конфигурации: {error}",
 				notifNoDir:                 "Не удалось определить каталог мода. Откройте файл через локальный путь file://.",
-				notifDirSelected:           "Папка мода установлена: «{name}». Только для текущего сеанса.",
-				notifDirError:              "Не удалось получить доступ к папке.",
-				notifSavedToMod:            "{filename} сохранён в подпапку sql/.",
-				notifSaveError:             "Ошибка записи: {error}",
 				notifAutoApplied:           "Цвета {method} применены к {leader}",
 				notifBulkApplied:           "{method} применено к {count} лидерам",
 				notifMinColors:             "Выберите не менее {min} цветов",
@@ -2879,17 +2759,9 @@ window.Locale = {
 				tipDelete:                  "删除",
 
 				// --- 9. File & Directory Management ---
-				dirDetected:                "模组目录:",
-				dirNotFound:                "请直接从模组文件夹打开此文件以自动检测路径。",
-				tipCopyPath:                "复制路径到剪贴板",
-				dirSelected:                "模组文件夹:",
-				dirWebMode:                 "选择您的模组文件夹以直接保存 SQL 文件。",
-				btnPickDir:                 "选择模组文件夹",
-				tipChangeDir:               "更改模组文件夹",
-				btnSaveToMod:               "保存到 {folder}/sql/",
 				
 				sqlPastebinTitle:           "SQL 输出",
-				sqlPastebinFooter:          "将 Workshop 模组目录中 \"sql\" 文件夹内的 colors.sql 内容替换为上述代码。或者，下载下方的文件（必须命名为 colors.sql）并将其放置在相同位置。",
+				sqlPastebinFooter:          "将 Workshop 模组目录中 \"sql\" 文件夹内的 colors.sql 内容替换为上述代码。或者，下载上方的文件（必须命名为 colors.sql）并将其放置在相同位置。",
 				tipDownloadSql:             "下载 colors.sql",
 				
 				sqlCopyBtn:                 "复制到剪贴板",
@@ -2912,10 +2784,6 @@ window.Locale = {
 				notifConfigLoaded:          "已从 {filename} 导入配置。",
 				notifConfigError:           "加载配置时出错: {error}",
 				notifNoDir:                 "无法检测模组目录。请从本地 file:// 路径打开此文件。",
-				notifDirSelected:           "模组文件夹已设置为“{name}”。仅限本次会话。",
-				notifDirError:              "无法访问该文件夹。",
-				notifSavedToMod:            "{filename} 已保存到 sql/ 子文件夹。",
-				notifSaveError:             "写入失败：{error}",
 				notifAutoApplied:           "{method} 颜色已应用到 {leader}",
 				notifBulkApplied:           "{method} 已应用到 {count} 位领袖",
 				notifMinColors:             "请至少选择 {min} 种颜色",
@@ -3170,17 +3038,9 @@ window.Locale = {
 				tipDelete:                  "刪除",
 
 				// --- 9. File & Directory Management ---
-				dirDetected:                "模組目錄:",
-				dirNotFound:                "請直接從模組資料夾開啟此檔案以自動偵測路徑。",
-				tipCopyPath:                "複製路徑到剪貼簿",
-				dirSelected:                "模組資料夹:",
-				dirWebMode:                 "選擇您的模組資料夹以直接儲存 SQL 檔案。",
-				btnPickDir:                 "選擇模組資料夹",
-				tipChangeDir:               "變更模組資料夹",
-				btnSaveToMod:               "儲存至 {folder}/sql/",
 				
 				sqlPastebinTitle:           "SQL 輸出",
-				sqlPastebinFooter:          "將 Workshop 模組目錄中 \"sql\" 資料夹內的 colors.sql 內容替換為上述程式碼。或者，下載下方的檔案（必須命名為 colors.sql）並將其放置於相同位置。",
+				sqlPastebinFooter:          "將 Workshop 模組目錄中 \"sql\" 資料夹內的 colors.sql 內容替換為上述程式碼。或者，下載上方的檔案（必須命名為 colors.sql）並將其放置於相同位置。",
 				tipDownloadSql:             "下載 colors.sql",
 				
 				sqlCopyBtn:                 "複製到剪貼簿",
@@ -3203,10 +3063,6 @@ window.Locale = {
 				notifConfigLoaded:          "已從 {filename} 匯入設定。",
 				notifConfigError:           "載入設定時發生錯誤: {error}",
 				notifNoDir:                 "無法偵測模組目錄。請從本機 file:// 路徑開啟此檔案。",
-				notifDirSelected:           "模組資料夹已設定為「{name}」。僅限本次工作階段。",
-				notifDirError:              "無法存取該資料夹。",
-				notifSavedToMod:            "{filename} 已儲存至 sql/ 子資料夹。",
-				notifSaveError:             "寫入失敗：{error}",
 				notifAutoApplied:           "{method} 顏色已套用到 {leader}",
 				notifBulkApplied:           "{method} 已套用到 {count} 位領袖",
 				notifMinColors:             "請至少選擇 {min} 種顏色",
