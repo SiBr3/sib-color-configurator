@@ -301,12 +301,7 @@ const SiBr3Configurator = (function() {
 			
 			document.getElementById('btnLoadingModalCancel').textContent = t('btnCancel');
 			
-            // Directory status — neutral note for web hosting context
-            const stat = document.getElementById('directoryStatus');
-            stat.innerHTML =
-                `<img src="assets/icons/sib-cc-folder.png" style="width:16px;height:16px;margin-right:6px;vertical-align:middle">` +
-                `<span style="color:var(--text-muted);font-size:0.9em">${Utils.escapeHtml(t('dirWebMode'))}</span>`;
-            stat.classList.remove('warn');
+
             
             Render.colorsTable();
             Render.leadersTable();
