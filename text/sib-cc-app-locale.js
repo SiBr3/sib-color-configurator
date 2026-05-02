@@ -355,7 +355,7 @@ window.Locale = {
 				btnSaveToMod:               'Enregistrer dans {folder}/sql/',
 				
 				sqlPastebinTitle:           "Sortie SQL",
-				sqlPastebinFooter:          'Remplacez le contenu de colors.sql dans le dossier \"sql\" du répertoire du mod du Workshop par le code ci-dessus. Alternativement, téléchargez le fichier ci-dessous (qui doit s'appeler colors.sql) et placez-le au même endroit.',
+				sqlPastebinFooter:          "Remplacez le contenu de colors.sql dans le dossier \"sql\" du répertoire du mod du Workshop par le code ci-dessus. Alternativement, téléchargez le fichier ci-dessous (qui doit s'appeler colors.sql) et placez-le au même endroit.",
 				tipDownloadSql:             "Télécharger colors.sql",
 				
 				sqlCopyBtn:                 "Copier dans le presse-papiers",
