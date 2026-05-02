@@ -1,4 +1,3 @@
-
 const SiBr3Configurator = (function() {
 
     // ═══════════════════════════════════════════════════════════════
@@ -302,8 +301,8 @@ const SiBr3Configurator = (function() {
 			
 			document.getElementById('btnLoadingModalCancel').textContent = t('btnCancel');
 			
-            // Directory status translation with Copy Button
-            const dir = getModDirectory();
+            // Directory status
+            const dir = State.paths.currentDirPath || null;
             const stat = document.getElementById('directoryStatus');
             if (dir) {
                 const pathHtml = `<code class="copy-dir-path"; lang="en">${Utils.escapeHtml(dir)}</code>` +
@@ -314,8 +313,8 @@ const SiBr3Configurator = (function() {
                 stat.innerHTML = `<img src="assets/icons/sib-cc-folder.png" style="width: 16px; height: 16px; margin-right: 6px; vertical-align: middle">` + t('dirDetected') + pathHtml;
                 stat.classList.remove('warn');
             } else {
-                stat.innerHTML = `<img src="assets/icons/sib-cc-warning.png" style="width: 16px; height: 16px; margin-right: 6px;">` + t('dirNotFound'); 
-                stat.className = 'warn';
+                stat.innerHTML = `<img src="assets/icons/sib-cc-folder.png" style="width: 16px; height: 16px; margin-right: 6px; vertical-align: middle">` + t('dirWebMode');
+                stat.classList.remove('warn');
             }
             
             Render.colorsTable();
@@ -415,7 +414,7 @@ const SiBr3Configurator = (function() {
             document.getElementById('genericCodeBody').innerHTML = codeHtml;
             
             // Hardcoded to append \sql to the path
-            const dir = State.paths.currentDirPath || getModDirectory();
+            const dir = State.paths.currentDirPath || null;
             const targetPath = dir ? (dir + '\\sql') : '';
             
             if (targetPath) {
@@ -510,11 +509,9 @@ const SiBr3Configurator = (function() {
     // PATH DETECTION & PERSISTENCE
     // ═══════════════════════════════════════════════════════════════
     function getModDirectory() {
-        const href = window.location.href;
-        if (!href.startsWith('file:///')) return null;
-        let path = decodeURIComponent(href.replace('file:///', ''));
-        const lastSep = Math.max(path.lastIndexOf('/'), path.lastIndexOf('\\'));
-        return path.substring(0, lastSep).replace(/\//g, '\\');
+        // Auto-detection from file:/// URLs is no longer supported.
+        // Returns a manually set path if one exists, otherwise null.
+        return State.paths.currentDirPath || null;
     }
 
     function persist() {
@@ -1261,8 +1258,7 @@ const SiBr3Configurator = (function() {
 
                 switch(action) {
                     case 'exportSql':
-                        if (!getModDirectory()) UI.notify(t('notifNoDir'), 'error');
-                        else UI.showPastebin(t('sqlPastebinTitle'), IO.generateCombinedSQL(), t('sqlPastebinFooter'), 'colors.sql');
+                        UI.showPastebin(t('sqlPastebinTitle'), IO.generateCombinedSQL(), t('sqlPastebinFooter'), 'colors.sql');
                         break;
                     case 'exportConfig':
 						const lingerWeight = 15; 
