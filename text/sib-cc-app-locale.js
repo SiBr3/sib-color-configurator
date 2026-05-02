@@ -3,9 +3,9 @@ window.Locale = {
 			en: {
 				// --- 1. App Metadata & Navigation ---
 				appTitle:                   "SiBr3's Color Configurator",
-				appSubtitle:                "HTML-based tool for editing/creating color definitions and customizing leader jerseys",
+				appSubtitle:                "Web tool for editing/creating color definitions and customizing leader jerseys",
 				footerCredit:               "Created by SiBr3 • v{version}",
-				footerNote:                 "Keep this file inside the Workshop mod folder",
+				footerNote:                 "Export your config file regularly and keep it somewhere safe",
 				lastSaved:                  "last saved {time}",
 				toggleTheme:                "Toggle dark mode",
 				tipInterfaceLang:           "Interface language",
@@ -260,9 +260,9 @@ window.Locale = {
 			fr: {
 				// --- 1. App Metadata & Navigation ---
 				appTitle:                   "Configurateur de couleurs de SiBr3",
-				appSubtitle:                "Outil HTML pour modifier/créer des définitions de couleurs et personnaliser les maillots des dirigeants",
+				appSubtitle:                "Outil web pour modifier/créer des définitions de couleurs et personnaliser les maillots des dirigeants",
 				footerCredit:               "Créé par SiBr3 • v{version}",
-				footerNote:                 "Conservez ce fichier dans le dossier du mod du Workshop",
+				footerNote:                 "Exportez régulièrement votre fichier de configuration et conservez-le en lieu sûr",
 				lastSaved:                  "dernière sauvegarde le {time}",
 				toggleTheme:                "Basculer le mode sombre",
 				tipInterfaceLang:           "Langue de l'interface",
@@ -539,9 +539,9 @@ window.Locale = {
 			de: {
 				// --- 1. App Metadata & Navigation ---
 				appTitle:                   "SiBr3s Farb-Konfigurator",
-				appSubtitle:                "HTML-basiertes Werkzeug zum Bearbeiten/Erstellen von Farbdefinitionen und Anpassen von Anführer-Trikots",
+				appSubtitle:                "Web-Werkzeug zum Bearbeiten/Erstellen von Farbdefinitionen und Anpassen von Anführer-Trikots",
 				footerCredit:               "Erstellt von SiBr3 • v{version}",
-				footerNote:                 "Bewahre diese Datei im Workshop-Mod-Ordner auf.",
+				footerNote:                 "Exportiere regelmäßig deine Konfigurationsdatei und bewahre sie sicher auf.",
 				lastSaved:                  "zuletzt gespeichert am {time}",
 				toggleTheme:                "Dunkelmodus umschalten",
 				tipInterfaceLang:           "Sprache der Benutzeroberfläche",
@@ -817,9 +817,9 @@ window.Locale = {
 			it: {
 				// --- 1. App Metadata & Navigation ---
 				appTitle:                   "Configuratore colori di SiBr3",
-				appSubtitle:                "Strumento HTML per modificare/creare definizioni di colore e personalizzare le maglie dei leader",
+				appSubtitle:                "Strumento web per modificare/creare definizioni di colore e personalizzare le maglie dei leader",
 				footerCredit:               "Creato da SiBr3 • v{version}",
-				footerNote:                 "Conserva questo file nella cartella della mod del Workshop.",
+				footerNote:                 "Esporta regolarmente il tuo file di configurazione e conservalo in un posto sicuro.",
 				lastSaved:                  "ultimo salvataggio: {time}",
 				toggleTheme:                "Attiva/disattiva modalità scura",
 				tipInterfaceLang:           "Lingua dell'interfaccia",
@@ -1091,9 +1091,9 @@ window.Locale = {
 			es: {
 				// --- 1. App Metadata & Navigation ---
 				appTitle:                   "Configurador de colores de SiBr3",
-				appSubtitle:                "Herramienta HTML para editar/crear definiciones de colores y personalizar las camisetas de los líderes",
+				appSubtitle:                "Herramienta web para editar/crear definiciones de colores y personalizar las camisetas de los líderes",
 				footerCredit:               "Creado por SiBr3 • v{version}",
-				footerNote:                 "Mantén este archivo en la carpeta del mod del Workshop.",
+				footerNote:                 "Exporta tu archivo de configuración regularmente y guárdalo en un lugar seguro.",
 				lastSaved:                  "último guardado: {time}",
 				toggleTheme:                "Activar/desactivar modo oscuro",
 				tipInterfaceLang:           "Idioma de la interfaz",
@@ -1367,9 +1367,9 @@ window.Locale = {
 			ja: {
 				// --- 1. App Metadata & Navigation ---
 				appTitle:                   "SiBr3's カラーコンフィギュレーター",
-				appSubtitle:                "色定義の編集・作成および指導者ユニフォームのカスタマイズ用HTMLツール",
+				appSubtitle:                "色定義の編集・作成および指導者ユニフォームのカスタマイズ用Webツール",
 				footerCredit:               "SiBr3 作成 • v{version}",
-				footerNote:                 "このファイルはワークショップのモッドフォルダに保管してください。",
+				footerNote:                 "設定ファイルを定期的にエクスポートして、安全な場所に保管してください。",
 				lastSaved:                  "最終保存: {time}",
 				toggleTheme:                "ダークモードの切り替え",
 				tipInterfaceLang:           "インターフェース言語",
@@ -1658,9 +1658,9 @@ window.Locale = {
 			ko: {
 				// --- 1. App Metadata & Navigation ---
 				appTitle:                   "SiBr3's 컬러 콘피귀레이터",
-				appSubtitle:                "색상 정의 편집/생성 및 지도자 저지 커스터마이즈를 위한 HTML 도구",
+				appSubtitle:                "색상 정의 편집/생성 및 지도자 저지 커스터마이즈를 위한 웹 도구",
 				footerCredit:               "SiBr3 제작 • v{version}",
-				footerNote:                 "이 파일을 창작마당 모드 폴더에 보관하세요.",
+				footerNote:                 "설정 파일을 정기적으로 내보내고 안전한 곳에 보관하세요.",
 				lastSaved:                  "마지막 저장: {time}",
 				toggleTheme:                "다크 모드 전환",
 				tipInterfaceLang:           "인터페이스 언어",
@@ -1949,9 +1949,9 @@ window.Locale = {
 			pl: {
 				// --- 1. App Metadata & Navigation ---
 				appTitle:                   "Konfigurator kolorów SiBr3",
-				appSubtitle:                "Narzędzie HTML do edycji/tworzenia definicji kolorów i dostosowywania strojów przywódców",
+				appSubtitle:                "Narzędzie webowe do edycji/tworzenia definicji kolorów i dostosowywania strojów przywódców",
 				footerCredit:               "Stworzone przez SiBr3 • v{version}",
-				footerNote:                 "Zachowaj ten plik w folderze moda z Warsztatu.",
+				footerNote:                 "Regularnie eksportuj plik konfiguracji i przechowuj go w bezpiecznym miejscu.",
 				lastSaved:                  "ostatnio zapisano {time}",
 				toggleTheme:                "Przełącz tryb ciemny",
 				tipInterfaceLang:           "Język interfejsu",
@@ -2227,9 +2227,9 @@ window.Locale = {
 			pt_BR: {
 				// --- 1. App Metadata & Navigation ---
 				appTitle:                   "Configurador de cores de SiBr3",
-				appSubtitle:                "Ferramenta HTML para editar/criar definições de cores e personalizar as camisas dos líderes",
+				appSubtitle:                "Ferramenta web para editar/criar definições de cores e personalizar as camisas dos líderes",
 				footerCredit:               "Criado por SiBr3 • v{version}",
-				footerNote:                 "Mantenha este arquivo na pasta do mod do Workshop.",
+				footerNote:                 "Exporte seu arquivo de configuração regularmente e guarde-o em um local seguro.",
 				lastSaved:                  "último salvamento: {time}",
 				toggleTheme:                "Alternar modo escuro",
 				tipInterfaceLang:           "Idioma da interface",
@@ -2503,9 +2503,9 @@ window.Locale = {
 			ru: {
 				// --- 1. App Metadata & Navigation ---
 				appTitle:                   "Конфигуратор цветов SiBr3",
-				appSubtitle:                "HTML-инструмент для редактирования/создания определений цветов и настройки формы лидеров",
+				appSubtitle:                "Веб-инструмент для редактирования/создания определений цветов и настройки формы лидеров",
 				footerCredit:               "Создано SiBr3 • v{version}",
-				footerNote:                 "Сохраните этот файл в папке мода из Мастерской.",
+				footerNote:                 "Регулярно экспортируйте файл конфигурации и храните его в надёжном месте.",
 				lastSaved:                  "последнее сохранение: {time}",
 				toggleTheme:                "Переключить тёмную тему",
 				tipInterfaceLang:           "Язык интерфейса",
@@ -2794,9 +2794,9 @@ window.Locale = {
 			zh_Hans: {
 				// --- 1. App Metadata & Navigation ---
 				appTitle:                   "SiBr3 颜色配置器",
-				appSubtitle:                "用于编辑/创建颜色定义和自定义领袖球衣的HTML工具",
+				appSubtitle:                "用于编辑/创建颜色定义和自定义领袖球衣的网页工具",
 				footerCredit:               "SiBr3 制作 • v{version}",
-				footerNote:                 "请将此文件保留在创意工坊模组文件夹中。",
+				footerNote:                 "请定期导出配置文件并将其保存在安全的地方。",
 				lastSaved:                  "上次保存: {time}",
 				toggleTheme:                "切换深色模式",
 				tipInterfaceLang:           "界面语言",
@@ -3085,9 +3085,9 @@ window.Locale = {
 			zh_Hant: {
 				// --- 1. App Metadata & Navigation ---
 				appTitle:                   "SiBr3 顏色配置工具",
-				appSubtitle:                "用於編輯/建立顏色定義和自訂領袖球衣的HTML工具",
+				appSubtitle:                "用於編輯/建立顏色定義和自訂領袖球衣的網頁工具",
 				footerCredit:               "SiBr3 製作 • v{version}",
-				footerNote:                 "請將此檔案保留在工作坊模組資料夾中。",
+				footerNote:                 "請定期匯出設定檔並將其儲存在安全的地方。",
 				lastSaved:                  "上次儲存: {time}",
 				toggleTheme:                "切換深色模式",
 				tipInterfaceLang:           "介面語言",
