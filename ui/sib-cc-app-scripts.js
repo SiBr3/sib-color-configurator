@@ -1977,19 +1977,20 @@ const SiBr3Configurator = (function() {
 
 		// Page counter
 		const COUNTER_URL = 'https://sib-cc-counter.nathankearns.workers.dev/';
-		if (!sessionStorage.getItem('sib-cc-counted')) {
+		const el = document.getElementById('visitorCount');
+		
+		if (sessionStorage.getItem('sib-cc-counted')) {
+		    // Already counted this session — restore from cache
+		    if (el) el.textContent = Number(sessionStorage.getItem('sib-cc-count')).toLocaleString();
+		} else {
 		    fetch(COUNTER_URL)
 		        .then(r => r.ok ? r.json() : Promise.reject())
 		        .then(data => {
 		            sessionStorage.setItem('sib-cc-counted', '1');
-		            const el = document.getElementById('visitorCount');
-		            if (el && data.count) {
-		                el.textContent = data.count.toLocaleString();
-		            }
+		            sessionStorage.setItem('sib-cc-count', data.count);
+		            if (el && data.count) el.textContent = data.count.toLocaleString();
 		        })
 		        .catch(() => {
-		            // Counter unavailable — fail silently, hide the element
-		            const el = document.getElementById('visitorCount');
 		            if (el) el.closest('.visitor-counter').style.display = 'none';
 		        });
 		}
