@@ -1067,9 +1067,9 @@ const SiBr3Configurator = (function() {
 			if (!finalDuration || finalDuration <= 0) {
 				const itemCount = (items && items.length) ? items.length : 0;
 				
-				const timePerItem = 600; // 600ms per item
-				const minTime = 1000;    // Absolute minimum: 1 second
-				const maxTime = 5000;    // Absolute maximum: 5 seconds
+				const timePerItem = 200; // 600ms per item
+				const minTime = 600;    // Absolute minimum
+				const maxTime = 2000;    // Absolute maximum
 				
 				finalDuration = Math.min(Math.max(itemCount * timePerItem, minTime), maxTime);
 			}
