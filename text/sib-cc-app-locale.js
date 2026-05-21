@@ -488,6 +488,7 @@ window.Locale = {
 
 				},
 				leaderNames: {
+					"LEADER_ALEXANDER": "Alexandre",
 					"LEADER_ASHOKA": "Ashoka, Renonciateur du monde",
 					"LEADER_ASHOKA_ALT": "Ashoka, Conquérant du monde",
 					"LEADER_AUGUSTUS": "Auguste",
@@ -1022,6 +1023,7 @@ window.Locale = {
 				},
 				
 				leaderNames: {
+					"LEADER_ALEXANDER": "Alessandro",
 					"LEADER_ASHOKA": "Ashoka, che rinuncia al mondo",
 					"LEADER_ASHOKA_ALT": "Ashoka, conquistatore del mondo",
 					"LEADER_AUGUSTUS": "Augusto",
@@ -1283,6 +1285,7 @@ window.Locale = {
 				},
 				
 				leaderNames: {
+					"LEADER_ALEXANDER": "Alejandro",
 					"LEADER_ASHOKA": "Ashoka, Remediador mundial",
 					"LEADER_ASHOKA_ALT": "Ashoka, Conquistador del mundo",
 					"LEADER_AUGUSTUS": "Augusto",
@@ -1548,6 +1551,7 @@ window.Locale = {
 				
 				leaderNames: {
 					"LEADER_ADA_LOVELACE": "エイダ・ラブレス",
+					"LEADER_ALEXANDER": "アレキサンドロス",
 					"LEADER_AMINA": "アミナ",
 					"LEADER_ASHOKA": "アショーカ（世界の救済者）",
 					"LEADER_ASHOKA_ALT": "アショーカ（世界の征服者）",
@@ -1827,6 +1831,7 @@ window.Locale = {
 				
 				leaderNames: {
 					"LEADER_ADA_LOVELACE": "에이다 러브레이스",
+					"LEADER_ALEXANDER": "알렉산드로스",
 					"LEADER_AMINA": "아미나",
 					"LEADER_ASHOKA": "아소카, 세계를 버린 자",
 					"LEADER_ASHOKA_ALT": "아소카, 세계 정복자",
@@ -2105,6 +2110,7 @@ window.Locale = {
 				},
 				
 				leaderNames: {
+					"LEADER_ALEXANDER": "Aleksander",
 					"LEADER_ASHOKA": "Aśoka Obrońca Świata",
 					"LEADER_ASHOKA_ALT": "Aśoka Zdobywca Świata",
 					"LEADER_AUGUSTUS": "Oktawian August",
@@ -2371,6 +2377,7 @@ window.Locale = {
 				},
 				
 				leaderNames: {
+					"LEADER_ALEXANDER": "Alexandre",
 					"LEADER_ASHOKA": "Asoka, Renunciador do Mundo",
 					"LEADER_ASHOKA_ALT": "Asoka, Conquistador do Mundo",
 					"LEADER_AUGUSTUS": "Augusto",
@@ -2636,6 +2643,7 @@ window.Locale = {
 				
 				leaderNames: {
 					"LEADER_ADA_LOVELACE": "Ада Лавлейс",
+					"LEADER_ALEXANDER": "Александр",
 					"LEADER_AMINA": "Амина",
 					"LEADER_ASHOKA": "Ашока, Отрекшийся от мир",
 					"LEADER_ASHOKA_ALT": "Ашока, Завоеватель мира",
@@ -2914,6 +2922,7 @@ window.Locale = {
 				},
 				
 				leaderNames: {
+					"LEADER_ALEXANDER": "亚历山大",
 					"LEADER_ADA_LOVELACE": "埃达·洛夫莱斯",
 					"LEADER_AMINA": "阿米娜",
 					"LEADER_ASHOKA": "阿育王（舍世者）",
@@ -3194,6 +3203,7 @@ window.Locale = {
 				
 				leaderNames: {
 					"LEADER_ADA_LOVELACE": "愛達‧勒芙蕾絲",
+					"LEADER_ALEXANDER": "亞歷山大",
 					"LEADER_AMINA": "阿米娜",
 					"LEADER_ASHOKA": "阿育王（潛心向佛者）",
 					"LEADER_ASHOKA_ALT": "阿育王（征服天下者）",
