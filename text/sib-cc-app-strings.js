@@ -1,5 +1,5 @@
 window.Config = {
-    VERSION: '1.0',
+    VERSION: '1.2',
 	DEFAULT_COLORS: [
 			{type:"COLOR_STANDARD_AQUA_DK",    name:"Aqua (Dark)",      hex:"#014f51"},
 			{type:"COLOR_STANDARD_AQUA_LT",    name:"Aqua (Light)",     hex:"#7dece3"},
@@ -88,6 +88,7 @@ window.Config = {
 		CURATED_COLORS: {
 			"LEADER_ADA_LOVELACE": ["COLOR_SIB_THREE_KINGDOMS_JADE_MD", "COLOR_SIB_THREE_KINGDOMS_JADE_LT", "COLOR_SIB_PRUSSIAN_BLUE_DK", "COLOR_SIB_PRUSSIAN_BLUE_MD", "COLOR_SIB_PRUSSIAN_BLUE_LT", "COLOR_SIB_YAMATO_NADESHIKO_MD", "COLOR_SIB_YAMATO_NADESHIKO_LT", "COLOR_SIB_VENETIAN_CERUSE"],
 			"LEADER_AMINA": ["COLOR_SIB_ERYTHRAEAN_BLUE_DK", "COLOR_SIB_ERYTHRAEAN_BLUE_MD", "COLOR_SIB_ERYTHRAEAN_BLUE_LT", "COLOR_SIB_IMPERIAL_RED_DK", "COLOR_SIB_IMPERIAL_RED_MD", "COLOR_SIB_IMPERIAL_RED_LT", "COLOR_SIB_THEBAN_ELECTRUM_DK", "COLOR_SIB_THEBAN_ELECTRUM_MD", "COLOR_SIB_SILK_ROAD_POMEGRANATE_DK", "COLOR_SIB_SILK_ROAD_POMEGRANATE_MD", "COLOR_SIB_TYRIAN_PURPLE_DK", "COLOR_SIB_EA_NASIR_COPPER_DK", "COLOR_SIB_EA_NASIR_COPPER_MD"],
+			"LEADER_ALEXANDER": ["COLOR_SIB_IMPERIAL_RED_MD", "COLOR_SIB_VENETIAN_CERUSE", "COLOR_SIB_FLORENTINE_LACE", "COLOR_SIB_ASSYRIAN_LAPIS_LT", "COLOR_SIB_ESCUDO_GOLD_DK", "COLOR_SIB_INDIAN_INK_DK", "COLOR_SIB_PRUSSIAN_BLUE_MD"],
 			"LEADER_ASHOKA_ALT": ["COLOR_SIB_MAURYAN_PURPLE_DK", "COLOR_SIB_MAURYAN_PURPLE_MD", "COLOR_SIB_MAURYAN_PURPLE_LT", "COLOR_SIB_VENETIAN_CERUSE", "COLOR_SIB_ESCUDO_GOLD_DK", "COLOR_SIB_ESCUDO_GOLD_MD", "COLOR_SIB_SILK_ROAD_POMEGRANATE_DK", "COLOR_SIB_SILK_ROAD_POMEGRANATE_MD"],
 			"LEADER_ASHOKA": ["COLOR_SIB_THEBAN_ELECTRUM_DK", "COLOR_SIB_THEBAN_ELECTRUM_MD", "COLOR_SIB_TYRIAN_PURPLE_DK", "COLOR_SIB_SILK_ROAD_POMEGRANATE_DK", "COLOR_SIB_SILK_ROAD_POMEGRANATE_MD"],
 			"LEADER_AUGUSTUS": ["COLOR_SIB_IMPERIAL_RED_DK", "COLOR_SIB_IMPERIAL_RED_MD", "COLOR_SIB_ESCUDO_GOLD_DK", "COLOR_SIB_TYRIAN_PURPLE_DK", "COLOR_SIB_TYRIAN_PURPLE_MD", "COLOR_SIB_MAURYAN_PURPLE_DK"],
@@ -124,6 +125,7 @@ window.Config = {
 		DEFAULT_LEADERS: [
 			{type:"LEADER_ADA_LOVELACE",      name:"Ada Lovelace",              defaultPrimary:"COLOR_STANDARD_RED_LT",      defaultSecondary:"COLOR_STANDARD_WHITE_LT",    defaultAlt1P:"COLOR_STANDARD_RED_LT",      defaultAlt1S:"COLOR_STANDARD_YELLOW_MD",  defaultAlt2P:"COLOR_STANDARD_WHITE_LT",    defaultAlt2S:"COLOR_STANDARD_RED_MD",      defaultAlt3P:"COLOR_STANDARD_RED_LT",      defaultAlt3S:"COLOR_STANDARD_BLUE_DK"},
 			{type:"LEADER_AMINA",             name:"Amina",                     defaultPrimary:"COLOR_STANDARD_GREEN_DK",    defaultSecondary:"COLOR_STANDARD_WHITE_LT",    defaultAlt1P:"COLOR_STANDARD_YELLOW_MD",   defaultAlt1S:"COLOR_STANDARD_GREEN_DK",   defaultAlt2P:"COLOR_STANDARD_YELLOW_DK",   defaultAlt2S:"COLOR_STANDARD_WHITE_LT",    defaultAlt3P:"COLOR_STANDARD_WHITE_LT",    defaultAlt3S:"COLOR_STANDARD_YELLOW_DK"},
+			{type:"LEADER_ALEXANDER",         name:"Alexander",                 defaultPrimary:"COLOR_STANDARD_WHITE_MD",    defaultSecondary:"COLOR_STANDARD_YELLOW_MD",   defaultAlt1P:"COLOR_STANDARD_RED_MD",      defaultAlt1S:"COLOR_STANDARD_YELLOW_MD",  defaultAlt2P:"COLOR_STANDARD_YELLOW_MD",   defaultAlt2S:"COLOR_STANDARD_RED_MD",      defaultAlt3P:"COLOR_STANDARD_BLUE_DK",     defaultAlt3S:"COLOR_STANDARD_YELLOW_MD"},
 			{type:"LEADER_ASHOKA",            name:"Ashoka, World Renouncer",	defaultPrimary:"COLOR_STANDARD_PURPLE_DK",   defaultSecondary:"COLOR_STANDARD_AQUA_LT",     defaultAlt1P:"COLOR_STANDARD_AQUA_LT",     defaultAlt1S:"COLOR_STANDARD_PURPLE_DK",  defaultAlt2P:"COLOR_STANDARD_PURPLE_MD",   defaultAlt2S:"COLOR_STANDARD_AQUA_LT",     defaultAlt3P:"COLOR_STANDARD_AQUA_LT",     defaultAlt3S:"COLOR_STANDARD_PURPLE_MD"},
 			{type:"LEADER_ASHOKA_ALT",        name:"Ashoka, World Conqueror",   defaultPrimary:"COLOR_STANDARD_AQUA_LT",     defaultSecondary:"COLOR_STANDARD_PURPLE_DK",   defaultAlt1P:"COLOR_STANDARD_PURPLE_DK",   defaultAlt1S:"COLOR_STANDARD_AQUA_LT",    defaultAlt2P:"COLOR_STANDARD_AQUA_MD",     defaultAlt2S:"COLOR_STANDARD_MAGENTA_DK",  defaultAlt3P:"COLOR_STANDARD_MAGENTA_DK",  defaultAlt3S:"COLOR_STANDARD_AQUA_MD"},
 			{type:"LEADER_AUGUSTUS",          name:"Augustus",                  defaultPrimary:"COLOR_STANDARD_PURPLE_MD",   defaultSecondary:"COLOR_STANDARD_YELLOW_MD",   defaultAlt1P:"COLOR_STANDARD_RED_MD",      defaultAlt1S:"COLOR_STANDARD_YELLOW_MD",  defaultAlt2P:"COLOR_STANDARD_PURPLE_DK",   defaultAlt2S:"COLOR_STANDARD_YELLOW_MD",   defaultAlt3P:"COLOR_STANDARD_WHITE_DK",    defaultAlt3S:"COLOR_STANDARD_YELLOW_MD"},
@@ -159,6 +161,7 @@ window.Config = {
 		
 		LEADER_PORTRAITS: {
 			"LEADER_ADA_LOVELACE":     "assets/portraits/sib-cc-portrait-ada.gif",
+			"LEADER_ALEXANDER":        "assets/portraits/sib-cc-portrait-alexander.gif",
 			"LEADER_AMINA":            "assets/portraits/sib-cc-portrait-amina.gif",
 			"LEADER_ASHOKA_ALT":       "assets/portraits/sib-cc-portrait-ashoka-wc.gif",
 			"LEADER_ASHOKA":           "assets/portraits/sib-cc-portrait-ashoka.gif",
@@ -195,6 +198,7 @@ window.Config = {
 		
 		LEADER_PORTRAITS_COMPACT: {
 			"LEADER_ADA_LOVELACE":     "assets/portraits/sib-cc-portrait-ada-compact.gif",
+			"LEADER_ALEXANDER":        "assets/portraits/sib-cc-portrait-alexander-compact.gif",
 			"LEADER_AMINA":            "assets/portraits/sib-cc-portrait-amina-compact.gif",
 			"LEADER_ASHOKA_ALT":       "assets/portraits/sib-cc-portrait-ashoka-wc-compact.gif",
 			"LEADER_ASHOKA":           "assets/portraits/sib-cc-portrait-ashoka-compact.gif",
