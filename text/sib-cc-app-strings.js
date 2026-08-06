@@ -1,5 +1,5 @@
 window.Config = {
-    VERSION: '1.3',
+    VERSION: '1.4',
 	DEFAULT_COLORS: [
 			{type:"COLOR_STANDARD_AQUA_DK",    name:"Aqua (Dark)",      hex:"#014f51"},
 			{type:"COLOR_STANDARD_AQUA_LT",    name:"Aqua (Light)",     hex:"#7dece3"},
@@ -121,6 +121,8 @@ window.Config = {
 			"LEADER_TRUNG_TRAC": ["COLOR_SIB_ESCUDO_GOLD_MD", "COLOR_SIB_ESCUDO_GOLD_LT", "COLOR_SIB_TYRIAN_PURPLE_DK", "COLOR_SIB_TYRIAN_PURPLE_MD", "COLOR_SIB_MAURYAN_PURPLE_DK", "COLOR_SIB_MAURYAN_PURPLE_MD"],
 			"LEADER_XERXES": ["COLOR_SIB_IMPERIAL_RED_MD", "COLOR_SIB_IMPERIAL_RED_DK", "COLOR_SIB_FLORENTINE_LACE", "COLOR_SIB_THEBAN_ELECTRUM_DK", "COLOR_SIB_THEBAN_ELECTRUM_MD", "COLOR_SIB_INDIAN_INK_DK", "COLOR_SIB_INDIAN_INK_MD"],
 			"LEADER_XERXES_ALT": ["COLOR_SIB_ERYTHRAEAN_BLUE_DK", "COLOR_SIB_ERYTHRAEAN_BLUE_MD", "COLOR_SIB_MALACHITE_GREEN_MD", "COLOR_SIB_MALACHITE_GREEN_DK", "COLOR_SIB_THEBAN_ELECTRUM_DK", "COLOR_SIB_THEBAN_ELECTRUM_MD", "COLOR_SIB_TYRIAN_PURPLE_DK", "COLOR_SIB_TYRIAN_PURPLE_MD"]
+			"LEADER_YI_SUN_SIN": ["COLOR_SIB_IMPERIAL_RED_DK", "COLOR_SIB_IMPERIAL_RED_MD", "COLOR_SIB_VENETIAN_CERUSE", "COLOR_SIB_PRUSSIAN_BLUE_MD", "COLOR_SIB_PRUSSIAN_BLUE_LT", "COLOR_SIB_INDIAN_INK_DK", "COLOR_SIB_EA_NASIR_COPPER_LT"]
+		
 		},
 
 		DEFAULT_LEADERS: [
@@ -155,10 +157,12 @@ window.Config = {
 			{type:"LEADER_PACHACUTI",         name:"Pachacuti",                 defaultPrimary:"COLOR_STANDARD_YELLOW_DK",   defaultSecondary:"COLOR_STANDARD_YELLOW_MD",   defaultAlt1P:"COLOR_STANDARD_ORANGE_LT",   defaultAlt1S:"COLOR_STANDARD_AQUA_DK",    defaultAlt2P:"COLOR_STANDARD_YELLOW_MD",   defaultAlt2S:"COLOR_STANDARD_ORANGE_DK",   defaultAlt3P:"COLOR_STANDARD_AQUA_DK",     defaultAlt3S:"COLOR_STANDARD_ORANGE_LT"},
 			{type:"LEADER_SAYYIDA_AL_HURRA",  name:"Sayyida al Hurra",          defaultPrimary:"COLOR_STANDARD_GREEN_DK",    defaultSecondary:"COLOR_STANDARD_ORANGE_LT",   defaultAlt1P:"COLOR_STANDARD_YELLOW_LT",   defaultAlt1S:"COLOR_STANDARD_GREEN_DK",   defaultAlt2P:"COLOR_STANDARD_YELLOW_MD",   defaultAlt2S:"COLOR_STANDARD_RED_MD",      defaultAlt3P:"COLOR_STANDARD_RED_MD",      defaultAlt3S:"COLOR_STANDARD_YELLOW_MD"},
 			{type:"LEADER_TECUMSEH",          name:"Tecumseh",                  defaultPrimary:"COLOR_STANDARD_ORANGE_DK",   defaultSecondary:"COLOR_STANDARD_YELLOW_MD",   defaultAlt1P:"COLOR_STANDARD_YELLOW_MD",   defaultAlt1S:"COLOR_STANDARD_ORANGE_DK",  defaultAlt2P:"COLOR_STANDARD_AQUA_DK",     defaultAlt2S:"COLOR_STANDARD_GREEN_MD",    defaultAlt3P:"COLOR_STANDARD_GREEN_MD",    defaultAlt3S:"COLOR_STANDARD_AQUA_DK"},
-			{type:"LEADER_TOYOTOMI_HIDEYOSHI",name:"Toyotomi Hideyoshi",        defaultPrimary:"COLOR_STANDARD_WHITE_LT",     defaultSecondary:"COLOR_STANDARD_RED_DK",     defaultAlt1P:"COLOR_STANDARD_RED_DK",     defaultAlt1S:"COLOR_STANDARD_YELLOW_MD",    defaultAlt2P:"COLOR_STANDARD_RED_MD",      defaultAlt2S:"COLOR_STANDARD_WHITE_LT",   defaultAlt3P:"COLOR_STANDARD_BLUE_DK",   	defaultAlt3S:"COLOR_STANDARD_BLUE_LT"},
+			{type:"LEADER_TOYOTOMI_HIDEYOSHI",name:"Toyotomi Hideyoshi",        defaultPrimary:"COLOR_STANDARD_WHITE_LT",    defaultSecondary:"COLOR_STANDARD_RED_DK",     	defaultAlt1P:"COLOR_STANDARD_RED_DK",      defaultAlt1S:"COLOR_STANDARD_YELLOW_MD",    defaultAlt2P:"COLOR_STANDARD_RED_MD",      defaultAlt2S:"COLOR_STANDARD_WHITE_LT",   defaultAlt3P:"COLOR_STANDARD_BLUE_DK",   	defaultAlt3S:"COLOR_STANDARD_BLUE_LT"},
 			{type:"LEADER_TRUNG_TRAC",        name:"Trung Trac",                defaultPrimary:"COLOR_STANDARD_AQUA_DK",     defaultSecondary:"COLOR_STANDARD_AQUA_MD",     defaultAlt1P:"COLOR_STANDARD_AQUA_MD",     defaultAlt1S:"COLOR_STANDARD_AQUA_DK",    defaultAlt2P:"COLOR_STANDARD_RED_MD",      defaultAlt2S:"COLOR_STANDARD_YELLOW_MD",   defaultAlt3P:"COLOR_STANDARD_YELLOW_MD",   defaultAlt3S:"COLOR_STANDARD_RED_MD"},
 			{type:"LEADER_XERXES",            name:"Xerxes, King of Kings",     defaultPrimary:"COLOR_STANDARD_WHITE_DK",    defaultSecondary:"COLOR_STANDARD_YELLOW_MD",   defaultAlt1P:"COLOR_STANDARD_YELLOW_DK",   defaultAlt1S:"COLOR_STANDARD_YELLOW_MD",  defaultAlt2P:"COLOR_STANDARD_YELLOW_MD",   defaultAlt2S:"COLOR_STANDARD_WHITE_DK",    defaultAlt3P:"COLOR_STANDARD_WHITE_DK",    defaultAlt3S:"COLOR_STANDARD_WHITE_MD"},
 			{type:"LEADER_XERXES_ALT",        name:"Xerxes, the Achaemenid",   	defaultPrimary:"COLOR_STANDARD_YELLOW_DK",   defaultSecondary:"COLOR_STANDARD_WHITE_LT",    defaultAlt1P:"COLOR_STANDARD_WHITE_DK",    defaultAlt1S:"COLOR_STANDARD_WHITE_MD2",  defaultAlt2P:"COLOR_STANDARD_YELLOW_MD",   defaultAlt2S:"COLOR_STANDARD_WHITE_DK",    defaultAlt3P:"COLOR_STANDARD_ORANGE_LT",   defaultAlt3S:"COLOR_STANDARD_ORANGE_DK"},
+			{type:"LEADER_YI_SUN_SIN",        name:"Yi Sun-sin",   							defaultPrimary:"COLOR_STANDARD_BLUE_LT",  	 defaultSecondary:"COLOR_STANDARD_RED_DK",    	defaultAlt1P:"COLOR_STANDARD_RED_MD",    	 defaultAlt1S:"COLOR_STANDARD_BLUE_DK",  	defaultAlt2P:"COLOR_STANDARD_WHITE_LT",   defaultAlt2S:"COLOR_STANDARD_ORANGE_MD",    defaultAlt3P:"COLOR_STANDARD_ORANGE_MD",   defaultAlt3S:"COLOR_STANDARD_WHITE_LT"},
+		
 		],
 		
 		LEADER_PORTRAITS: {
@@ -197,6 +201,7 @@ window.Config = {
 			"LEADER_XERXES_ALT":       "assets/portraits/sib-cc-portrait-xerxes-ac.gif",
 			"LEADER_GENGHIS_KHAN":     "assets/portraits/sib-cc-portrait-khan.gif",
 			"LEADER_GILGAMESH":        "assets/portraits/sib-cc-portrait-gilgamesh.gif",
+			"LEADER_YI_SUN_SIN":        "assets/portraits/sib-cc-portrait-yi.gif",
 		},
 		
 		LEADER_PORTRAITS_COMPACT: {
@@ -235,5 +240,6 @@ window.Config = {
 			"LEADER_XERXES_ALT":       "assets/portraits/sib-cc-portrait-xerxes-ac-compact.gif",
 			"LEADER_GENGHIS_KHAN":     "assets/portraits/sib-cc-portrait-khan-compact.gif",
 			"LEADER_GILGAMESH":        "assets/portraits/sib-cc-portrait-gilgamesh-compact.gif",
+			"LEADER_YI_SUN_SIN":        "assets/portraits/sib-cc-portrait-yi-compact.gif",
 		}
 };
