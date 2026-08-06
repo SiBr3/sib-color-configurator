@@ -1585,6 +1585,7 @@ window.Locale = {
 					"LEADER_TRUNG_TRAC": "徴側",
 					"LEADER_XERXES": "クセルクセス1世（諸王の王）",
 					"LEADER_XERXES_ALT": "クセルクセス1世（アケメネス）",
+					"LEADER_YI_SUN_SIN": "李舜臣",
 				},
 			},
 
@@ -1866,6 +1867,7 @@ window.Locale = {
 					"LEADER_TRUNG_TRAC": "쯩짝",
 					"LEADER_XERXES": "크세르크세스, 왕 중의 왕",
 					"LEADER_XERXES_ALT": "크세르크세스, 아케메네스의 후예",
+					"LEADER_YI_SUN_SIN": "이순신",
 				},
 			},
 
@@ -2679,6 +2681,7 @@ window.Locale = {
 					"LEADER_TRUNG_TRAC": "Чынг Чак",
 					"LEADER_XERXES": "Ксеркс, Царь царей",
 					"LEADER_XERXES_ALT": "Ксеркс Ахеменид",
+					"LEADER_YI_SUN_SIN": "Ли Сунсин",
 				},
 			},
 
@@ -2960,6 +2963,7 @@ window.Locale = {
 					"LEADER_TRUNG_TRAC": "征侧",
 					"LEADER_XERXES": "薛西斯（万王之王）",
 					"LEADER_XERXES_ALT": "薛西斯（阿契美尼德）",
+					"LEADER_YI_SUN_SIN": "李舜臣",
 				},
 			},
 
@@ -3241,6 +3245,7 @@ window.Locale = {
 					"LEADER_TRUNG_TRAC": "徵側",
 					"LEADER_XERXES": "薛西斯（眾王之王）",
 					"LEADER_XERXES_ALT": "薛西斯（阿契美尼德）",
+					"LEADER_YI_SUN_SIN": "李舜臣",
 				},
 			},
         }   
